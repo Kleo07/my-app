@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Your Name",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": "https://github.com/Kleo07/my-app.git"
 }

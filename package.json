@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,5 +14,8 @@
   "repository": "https://github.com/Kleo07/my-app.git",
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
   }
 }

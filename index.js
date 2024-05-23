@@ -1,18 +1,15 @@
-// index.js
-
-// Import necessary modules
-const http = require('http');
-
-// Create a basic HTTP server
-const server = http.createServer((req, res) => {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello, World!\n');
-});
-
-// Define the port to listen on
+const express = require('express');
+const path = require('path');
+const app = express();
 const port = process.env.PORT || 3000;
 
-// Start the server
-server.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+// Serve the static files from the React app
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });

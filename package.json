@@ -10,5 +10,8 @@
   "keywords": [],
   "author": "Your Name",
   "license": "ISC",
-  "repository": "https://github.com/Kleo07/my-app.git"
+  "repository": "https://github.com/Kleo07/my-app.git",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
